@@ -18,7 +18,7 @@ function newElement() {
 
     let inputValue = document.getElementById("task").value;
 
-    if (inputValue === "") {
+    if (inputValue === "" || inputValue.replace(/^\s+|\s+$/g, "").length == 0) {
         $(".error").toast("show");
     }
     else {
