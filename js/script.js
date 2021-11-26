@@ -3,7 +3,7 @@ let todos = JSON.parse(localStorage.getItem("todos") || "[]");
 
 function localStorageDisplay() {
 
-    console.log(todos)
+
     for (let i = 0; i < todos.length; i++) {
         if (todos[i].isChecked == true) {
             makeNewHTMLDisplay(todos[i].text, true)
